@@ -1,9 +1,5 @@
-.sidebar_navigation {
-    background-color: #121212;
-    border-radius: 8px;
-    padding: 16px 0 0 16px; 
-}
 
+/*SIDEBAR*/
 .sidebar {
     position: fixed;
     top: 0;
@@ -11,13 +7,20 @@
     bottom: 0;
     padding: 12px;
     width: 300px;
+    
+}
+
+.sidebar_navigation {
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 16px 0 0 16px; /*padding superior, padding direito, padding inferior, padding esquerdo */
 }
 
 .sidebar_navigation.logo {
     background-color: #121212;
     display: flex;
     border-radius: 8px;
-    padding: 16px 0 0 16px;
+    padding: 16px 0 0 16px; /*padding superior, padding direito, padding inferior, padding esquerdo */
 }
 .logo img{
     width: 80px;
@@ -26,11 +29,11 @@
 
 .sidebar nav ul {
     margin-top: 20px;
-    padding: 0 20px 10px 20px; /*padding superior, padding direito, padding inferior, padding esquerdo */
+    padding: 0 10px 10px 5px; /*padding superior, padding direito, padding inferior, padding esquerdo */
 }
 
 .sidebar nav ul li {
-    padding: 7px 0;
+    padding: 10px 0;
 }
 
 .sidebar nav ul li a {
@@ -42,12 +45,17 @@
 
 }
 
+.sidebar nav ul li a .text {
+    margin-left: 5px;
+}
+
+/*BIBLIOTECA*/
 .library {
     background-color: #121212;
     border-radius: 8px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    display: flex; 
+    justify-content: space-between; /* Itens são alinhados considerando o padding, ou seja, o espaço é colocado apenas entre os itens */
+    flex-direction: column; /* Usado junto com o display Flex */
     color: #b3b3b3;
     padding: 4px 8px; 
     font-weight: 600;
@@ -56,15 +64,16 @@
 
 }
 
-.library .library_content {
+.library .library_content { 
     display: flex;
     justify-content: space-between;
+    margin-left: -23px; /* Margem do 'Sua Biblioteca'*/
 
 }
 
-.library .library_button {
+.library .library_content .library_button {
     display: flex;
-    margin-right: 10px;
+    margin-left: 5px;
     color: #b3b3b3;
     background-color: transparent;
     border: 0;
@@ -74,19 +83,20 @@
     text-align: center;
     text-decoration: none;
     text-transform: none;
-    padding: 15px 20px;
+    padding: 20px 20px; /* Padding inferior e superior, padding lateral*/
 
 }
 
-.library .library_button span{
-    margin-left: 5px;
+.library .library_content .library_button span{
+    margin-left: -10px; /*Separa o book do texto*/
 }
 
-.library .library_button fa-book {
-    margin-right: 10px;
+.library .library_content .library_button .fa-book {
+    margin-left: 10px;
 }
-.library .library_button fa {
-    font-size: 20px;
+
+.library .library_content .library_button .fa {
+    font-size: 17px;
     font-weight: 300;
     color: #b3b3b3;
     margin-right: 10px;
@@ -95,5 +105,132 @@
 }
 
 .library .library_content .fa-plus{
-    margin: 15px 10px;
+    margin: 20px 10px;
 }
+
+/*CRIE SUA PLAYLIST*/
+.section-playlist{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px; /*Definição do espaço que vai no space-between*/;
+    background-color: #242424;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0px;
+    padding: 16px 20px;
+    border-radius: 10px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.section-playlist_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-playlist_content .text{
+    padding-bottom: 14px;
+    color: #ffff;
+    font-family: "DM Sans", sans-serif;
+    
+}
+
+.section-playlist_content .title {
+    font-weight: 700;
+}
+
+.section-playlist_content .subtitle {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.section-playlist_content .section-playlist_button {
+    background-color: #ffff;
+    color: #000;
+    display: flex;
+    width: 113px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+    text-transform: none;
+    padding: 8px;
+     margin-top: 12px;
+    border: 0px;
+    justify-content: center; /*alinha o texto no centro*/
+}
+
+/*COOKIES E LINGUA*/
+.sidebar .cookies{
+    margin: 25px 20px;
+}
+
+.sidebar .cookies a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-weight: 500;
+}
+
+.sidebar .cookies a:hover{
+    text-decoration: underline;
+}
+
+.languages .languages-button {
+    background-color: transparent;
+    border: 1px solid #878787;
+    color: #ffff;
+    align-items: center;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 8px;
+    justify-content: center; 
+    cursor: pointer;
+    width: 170px;
+    margin: 8px;
+}
+
+/*FOOTER*/
+
+footer{
+    position: fixed;
+    bottom: 0; /*Localiza o footer na parte inferior da tela*/
+    left: 0;
+    right: 0;
+    padding: 15px 34px;
+    background: linear-gradient(to right, #101910, #2bdefd);
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+footer .footer_text .title{
+    font-size: 12px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+    font-weight: 400;
+
+
+}
+
+footer .footer_text .subtitle{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer .footer_button button{
+    background-color: #ffff;
+    color: #000;
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 40px;
+    border: 0;
+    padding: 14px 30px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
