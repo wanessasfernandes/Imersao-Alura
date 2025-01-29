@@ -1,4 +1,7 @@
-
+body{
+    background-color: #000;
+    font-family: var(--font-dm-sans);
+}
 /*SIDEBAR*/
 .sidebar {
     position: fixed;
@@ -24,7 +27,6 @@
 }
 .logo img{
     width: 80px;
-
 }
 
 .sidebar nav ul {
@@ -41,8 +43,6 @@
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    font-family: "DM Sans", sans-serif;
-
 }
 
 .sidebar nav ul li a .text {
@@ -61,14 +61,12 @@
     font-weight: 600;
     font-size: 14px;
     margin-top: 10px;
-
 }
 
 .library .library_content { 
     display: flex;
     justify-content: space-between;
     margin-left: -23px; /* Margem do 'Sua Biblioteca'*/
-
 }
 
 .library .library_content .library_button {
@@ -79,12 +77,11 @@
     border: 0;
     font-size: 15px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
+
     text-align: center;
     text-decoration: none;
     text-transform: none;
     padding: 20px 20px; /* Padding inferior e superior, padding lateral*/
-
 }
 
 .library .library_content .library_button span{
@@ -101,7 +98,6 @@
     color: #b3b3b3;
     margin-right: 10px;
     padding-right: 8px;
-
 }
 
 .library .library_content .fa-plus{
@@ -121,7 +117,6 @@
     margin: 8px 0px;
     padding: 16px 20px;
     border-radius: 10px;
-    font-family: "DM Sans", sans-serif;
 }
 
 .section-playlist_content {
@@ -131,9 +126,7 @@
 
 .section-playlist_content .text{
     padding-bottom: 14px;
-    color: #ffff;
-    font-family: "DM Sans", sans-serif;
-    
+    color: #ffff; 
 }
 
 .section-playlist_content .title {
@@ -153,7 +146,6 @@
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-decoration: none;
     text-transform: none;
     padding: 8px;
@@ -204,7 +196,6 @@ footer{
     color: #ffff;
     display: flex;
     justify-content: space-between;
-
 }
 
 footer .footer_text .title{
@@ -212,8 +203,6 @@ footer .footer_text .title{
     margin-top: 7px;
     margin-bottom: 10px;
     font-weight: 400;
-
-
 }
 
 footer .footer_text .subtitle{
@@ -224,7 +213,6 @@ footer .footer_text .subtitle{
 footer .footer_button button{
     background-color: #ffff;
     color: #000;
-    font-family: "DM Sans", sans-serif;
     font-size: 16px;
     font-weight: bold;
     border-radius: 40px;
