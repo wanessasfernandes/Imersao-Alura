@@ -1,0 +1,39 @@
+/* Responsividade */
+@media (max-width: 1024px) {
+    .header-navigation {
+        flex-direction: row; /* Empilha os itens */
+        align-items: center;
+    }
+
+    .header-search {
+        position: static; /* Remove a posição absoluta */
+        transform: none;
+        width: 90%; /* Ocupa quase toda a largura */
+        max-width: 400px; /* Evita que fique muito largo */
+    }
+}
+
+@media (max-width: 768px) {
+    .header-navigation {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header-search {
+        width: 100%; /* Ocupa toda a largura disponível */
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 1015px){
+    .offer-list_item{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 1015px){
+    .playlist-section{
+        height: 207vh;
+    }
+}
+
