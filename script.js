@@ -19,10 +19,16 @@ function displayResults(result) {
         return;
     }
 
-    const element = result[0]; 
-    artistName.innerText = element.name;
-    artistImage.src = element.urlImg;
-    
+    const searchTerm = searchInput.value.trim().toLowerCase();
+    const matchingArtist = result.find(artist => artist.name.toLowerCase().startsWith(searchTerm));
+
+    if (!matchingArtist) {
+        resultArtist.classList.add("hidden");
+        return;
+    }
+
+    artistName.innerText = matchingArtist.name;
+    artistImage.src = matchingArtist.urlImg;
     resultArtist.classList.remove("hidden");
 }
 
